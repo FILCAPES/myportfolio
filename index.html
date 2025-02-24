@@ -6,7 +6,6 @@
     <title>Fil Jearen Apiag - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
     <style>
-        /* Your existing CSS remains the same */
         * {
             margin: 0;
             padding: 0;
@@ -15,7 +14,7 @@
         }
 
         :root {
-            --primary: #54ece5;
+            --primary: #59d6ea;
             --secondary: #ff3d00;
             --accent: #ffd180;
             --dark: #1a1a1a;
@@ -226,6 +225,58 @@
             margin-bottom: 1rem;
         }
 
+        /* Certification Section */
+        .certifications-section {
+            margin-top: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .certifications-title {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .certification-card {
+            background: var(--darker);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid var(--gray);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .certification-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .certification-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .certification-card p {
+            font-size: 0.9rem;
+            color: var(--light);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero-content {
@@ -281,6 +332,18 @@
                 <h3>Education</h3>
                 <p style="color: var(--light);">🎓 Bachelor of Science in Marine Transportation - Lyceum Of Iligan Foundation</p>
                 <p style="color: var(--light);">🎓 Electronics Engineering Technology - Mindanao State University</p>
+            </div>
+            
+            <!-- New Certifications Section -->
+            <div class="certifications-section">
+                <h3 class="certifications-title">Trainings</h3>
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <h4>Go High Level Certificate</h4>
+                        <p>Certified in creating landing pages, websites, automation sequences, booking calls, email marketing, pipeline management, and GHL administration.</p>
+                    </div>
+                    <!-- You can add more certifications here in the future by duplicating the certification-card div -->
+                </div>
             </div>
         </div>
     </div>
